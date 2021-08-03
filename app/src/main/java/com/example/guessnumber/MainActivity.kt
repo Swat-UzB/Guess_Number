@@ -38,7 +38,8 @@ class MainActivity : AppCompatActivity() {
             binding.editTextNumber.text.clear()
             var inter = ""
             var result = ""
-            checkAnswer(guessUser)
+            if (chance>1){
+            checkAnswer(guessUser)}
             when {
                 isWon -> {
                     inter = gameEnd
@@ -58,12 +59,13 @@ class MainActivity : AppCompatActivity() {
                 }
                 isInvalid -> {
                     inter = "Number is between $min and $max. Can you guess it?"
-                    result = "Invalid number rangeh "
+                    result = "Invalid number range"
                     isInvalid = false
                 }
                 else -> {
                     inter = gameEnd
                     result = "You lost. The number was $randomNumber."
+                    binding.buttonSubmit.visibility = View.INVISIBLE
                 }
             }
             binding.textViewInterval.text = inter
