@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Guess Number</string>
+    <string name="welcome_post">Welcome to Guess the Number Game</string>
+    <string name="interval">Number is between 10 and 100. Can you guess it?</string>
+    <string name="text_result">What is your first guess ?</string>
+    <string name="edit_text_hint">Enter your guess</string>
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
+    <string name="Exit">Exit</string>
+</resources>
